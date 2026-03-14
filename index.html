@@ -1,60 +1,29 @@
 <!DOCTYPE html>
-<html lang="id">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Profile Card</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
+    <title>JavaScript</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+    </style>
+
 </head>
-<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+<body>
 
-  <div class="bg-white w-80 rounded-2xl shadow-lg overflow-hidden">
+<h1 id="judul">Azizatun Najwa</h1>
+<button id="tombol">Mulai</button>
 
-    <!-- Background Header -->
-    <div class="h-24 bg-[#6B8E75] bg-opacity-90"></div>
+<script>
+const judul = document.getElementById("judul");
+const tombol = document.getElementById("tombol");
 
-    <!-- Foto Profil -->
-    <div class="flex justify-center -mt-12">
-      <img src="foto.jpg" 
-           alt="Foto Profil"
-           class="w-24 h-24 rounded-full border-4 border-white shadow-md object-cover">
-    </div>
-
-    <!-- Info -->
-    <div class="text-center p-5">
-      <h2 class="text-lg font-semibold">Yeh Shuhua</h2>
-      <p class="text-gray-500 text-sm">Seniman</p>
-
-      <p class="text-gray-600 text-sm mt-3">
-        In progress.
-      </p>
-
-      <!-- Stats -->
-      <div class="flex justify-around mt-4 text-sm">
-        <div>
-          <p class="font-semibold">130</p>
-          <p class="text-gray-500">Projects</p>
-        </div>
-        <div>
-          <p class="font-semibold">1.4M</p>
-          <p class="text-gray-500">Followers</p>
-        </div>
-        <div>
-          <p class="font-semibold">1</p>
-          <p class="text-gray-500">Following</p>
-        </div>
-      </div>
-
-      <!-- Button -->
-      <button class="mt-5 w-full bg-[#6B8E75] text-white py-2 rounded-lg hover:bg-[#5F7D67] transition shadow-md">
-        Follow
-    </button>
-
-
-
-    </div>
-
-  </div>
+tombol.addEventListener("click", function() {
+    judul.textContent = "Berhasil";
+    judul.style.color = "green";
+});
+</script>
 
 </body>
 </html>
